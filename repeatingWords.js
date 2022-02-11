@@ -10,6 +10,5 @@ function checkRepeatingWords(str){
     }
     return false;
 }
-//const sentence=prompt("Enter the sentence");
-
 console.log(checkRepeatingWords(sentence));
+
