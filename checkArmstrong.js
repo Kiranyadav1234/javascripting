@@ -1,10 +1,10 @@
-function findArmstrong(num)
+function findArmstrong(range)
 {
-    for(let i=1;i<=num;i++)
+    for(let index=1;index<=range;index++)
     {
-        console.log(isArmstrong(i));
-        if(isArmstrong(i))
-           console.log(i);
+        console.log(isArmstrong(index));
+        if(isArmstrong(index))
+           console.log(index);
 
     }
        
@@ -15,6 +15,7 @@ function isArmstrong(number)
     let sum = 0;
     while(temp>0)
     {
+
         let remainder = temp%10;
         sum +=remainder*remainder*remainder;
         temp =parseInt(temp/10);
